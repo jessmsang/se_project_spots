@@ -53,6 +53,10 @@
   opacity: 0.7;
 }
 
+.avatar__text_edit-button:hover {
+  opacity: 1;
+}
+
 .edit-button__icon {
   max-width: 18.48px;
   margin-right: 8px;
@@ -76,6 +80,10 @@
   color: #fcf5e5;
   border: none;
   font-size: 16px;
+}
+
+.new-post:hover {
+  opacity: 0.8;
 }
 
 .new-post__icon {
