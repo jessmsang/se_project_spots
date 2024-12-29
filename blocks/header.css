@@ -1,0 +1,70 @@
+.header {
+  font-family: "Poppins", Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 34px 80px 20px;
+}
+
+.avatar {
+  display: flex;
+}
+
+.avatar__image {
+  margin-right: 20px;
+}
+
+.avatar__image_file {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.avatar__text {
+  margin: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.avatar__text_heading {
+  line-height: 32px;
+  margin: 0 0 12px;
+}
+
+.avatar__text_description {
+  line-height: 16px;
+  margin-bottom: auto;
+  margin-top: 0;
+  opacity: 0.7;
+}
+
+.avatar__text_edit-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  background-color: #fcf5e5;
+  padding: 0;
+  opacity: 0.7;
+}
+
+.edit-button__icon {
+  max-width: 18.48px;
+  margin-right: 8px;
+}
+
+.edit-button__text {
+  line-height: 16px;
+  margin: 0;
+}
+
+.new-post-button {
+  background-color: #212121;
+  color: #fcf5e5;
+  line-height: 16px;
+  min-width: 149px;
+  height: 52px;
+  border-radius: 8px;
+}

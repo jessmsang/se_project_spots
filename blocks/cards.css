@@ -1,0 +1,29 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.card {
+  max-width: 413px;
+  max-height: 413px;
+}
+
+.card__image {
+  max-width: 413px;
+  max-height: 413px;
+}
+
+.card__subtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+}
+
+.like-icon {
+  max-width: 23px;
+  max-height: 20px;
+}

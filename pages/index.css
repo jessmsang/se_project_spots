@@ -1,13 +1,6 @@
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  src: url("./vendor/fonts/poppins-regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: light;
-  font-weight: 400;
-  src: url("./vendor/fonts/poppins-light.ttf") format("truetype");
-}
+@import url(../vendor/normalize.css);
+@import url(../blocks/fonts.css);
+@import url(../blocks/page.css);
+@import url(../blocks/menu-bar.css);
+@import url(../blocks/header.css);
+@import url(../blocks/cards.css);
