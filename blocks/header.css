@@ -3,11 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 34px 80px 20px;
+  margin: 34px 80px 0;
+  border-bottom: 1px solid #21212166;
 }
 
 .avatar {
   display: flex;
+  padding-bottom: 20px;
 }
 
 .avatar__image {
@@ -60,11 +62,23 @@
   margin: 0;
 }
 
-.new-post-button {
+.new-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #212121;
-  color: #fcf5e5;
-  line-height: 16px;
   min-width: 149px;
   height: 52px;
+  padding: 18px 24px 18px 32px;
   border-radius: 8px;
+  margin-bottom: 20px;
+  color: #fcf5e5;
+  border: none;
+}
+
+.new-post__icon {
+  color: #fcf5e5;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
 }
