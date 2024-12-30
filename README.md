@@ -1,7 +1,19 @@
-Title: Spots
+# Spots
 
-This project is our first project utilizing responsive layouts and the _display:grid_ property, as well as several other functionalities learned in this sprint and previous ones.
+An Image Social Media Site
 
-Languages uses: HTML and CSS. This project was completed on MacOS.
+## Description
+
+This project is our first project utilizing responsive layouts and the _display:grid_ property, as well as several other functionalities learned in sprint 3 and previous sprints.
+
+## Tech Stack
+
+- HTML
+- CSS
+- Responsive Design
+
+## Deployment
+
+This webpage is deployed to GitHub Pages:
 
 https://jessmsang.github.io/se_project_spots/
