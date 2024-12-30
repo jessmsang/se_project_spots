@@ -1,49 +1,42 @@
 .profile {
   font-family: "Poppins", Arial, sans-serif;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin: 34px 80px 0;
+  margin-top: 34px;
+  padding: 0 0 20px;
   border-bottom: 1px solid #21212166;
 }
 
-.avatar {
-  display: flex;
-  padding-bottom: 20px;
-}
-
-.avatar__image {
+.profile__avatar {
   margin-right: 20px;
-}
-
-.avatar__image_file {
   width: 190px;
   height: 190px;
   object-fit: cover;
   object-position: top;
   border-radius: 8px;
+  display: block;
 }
 
-.avatar__text {
-  margin: none;
+.profile__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.profile__name {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.avatar__text_heading {
   font-size: 32px;
   margin: 0 0 12px;
 }
 
-.avatar__text_description {
+.profile__description {
   font-size: 16px;
-  margin-bottom: auto;
-  margin-top: 0;
+  margin: 0;
   opacity: 0.7;
 }
 
-.avatar__text_edit-button {
+.profile__edit-button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -52,10 +45,10 @@
   padding: 0;
   opacity: 0.7;
   font-size: 16px;
-  margin: 0;
+  margin-top: auto;
 }
 
-.avatar__text_edit-button:hover {
+.profile__edit-button:hover {
   opacity: 1;
 }
 
@@ -64,7 +57,9 @@
   margin-right: 8px;
 }
 
-.new-post {
+.profile__add-button {
+  margin-left: auto;
+  margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,17 +68,16 @@
   height: 52px;
   padding: 18px 24px 18px 32px;
   border-radius: 8px;
-  margin-bottom: 20px;
   color: #fcf5e5;
   border: none;
   font-size: 16px;
 }
 
-.new-post:hover {
+.profile__add-button:hover {
   opacity: 0.8;
 }
 
-.new-post__icon {
+.add__icon {
   color: #fcf5e5;
   width: 12px;
   height: 12px;

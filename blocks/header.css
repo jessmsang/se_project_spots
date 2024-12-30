@@ -1,5 +1,5 @@
 .header {
-  background-color: white;
+  background-color: #fff;
   height: 46px;
   display: flex;
   justify-content: center;
@@ -9,5 +9,4 @@
 .logo {
   height: 26px;
   width: 94px;
-  color: #212121;
 }

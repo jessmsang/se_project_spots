@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spots</title>
     <meta name="author" content="Jess Sang" />
     <meta name="description" content="TripleTen Sprint 3: Spots" />
     <meta name="keywords" content="TripleTen, spots, social media" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Spots</title>
   </head>
   <body>
     <div class="page">
@@ -16,39 +16,35 @@
         <img src="./images/logo.png" alt="Spots Logo" class="logo" />
       </header>
       <main class="content">
-        <section class="profile">
-          <div class="avatar">
-            <div class="avatar__image">
+        <section class="profile page__section">
+          <img
+            src="./images/avatar_bessie-coleman.png"
+            alt="Bessie Coleman Avatar Image"
+            class="profile__avatar"
+          />
+          <div class="profile__column">
+            <h1 class="profile__name">Bessie Coleman</h1>
+            <p class="profile__description">Civil Aviator</p>
+            <button class="profile__edit-button edit-button">
               <img
-                src="./images/avatar_bessie-coleman.png"
-                alt="Bessie Coleman Avatar Image"
-                class="avatar__image_file"
+                src="./images/edit-button_icon.png"
+                alt="edit icon"
+                class="edit-button__icon"
               />
-            </div>
-            <div class="avatar__text">
-              <h1 class="avatar__text_heading">Bessie Coleman</h1>
-              <p class="avatar__text_description">Civil Aviator</p>
-              <button class="avatar__text_edit-button edit-button">
-                <img
-                  src="./images/edit-button_icon.png"
-                  alt="edit icon"
-                  class="edit-button__icon"
-                />
-                Edit Profile
-              </button>
-            </div>
+              Edit Profile
+            </button>
           </div>
-          <button class="new-post">
+          <button class="profile__add-button add">
             <img
               src="./images/new-post-icon.png"
-              alt="new post icon"
-              class="new-post__icon"
+              alt="add icon"
+              class="add__icon"
             />
             New Post
           </button>
         </section>
-        <section class="cards">
-          <figure class="card">
+        <ul class="cards page__section">
+          <li class="card">
             <img
               src="./images/val-thorens.jpeg"
               alt="Val Thorens image"
@@ -62,8 +58,8 @@
                 class="like-icon"
               />
             </div>
-          </figure>
-          <figure class="card">
+          </li>
+          <li class="card">
             <img
               src="./images/restaurant-terrace.png"
               alt="Restaurant terrace image"
@@ -77,8 +73,8 @@
                 class="like-icon"
               />
             </div>
-          </figure>
-          <figure class="card">
+          </li>
+          <li class="card">
             <img
               src="./images/outdoor-cafe.png"
               alt="An outdoor cafe image"
@@ -92,8 +88,8 @@
                 class="like-icon"
               />
             </div>
-          </figure>
-          <figure class="card">
+          </li>
+          <li class="card">
             <img
               src="./images/bridge.png"
               alt="bridge image"
@@ -109,8 +105,8 @@
                 class="like-icon"
               />
             </div>
-          </figure>
-          <figure class="card">
+          </li>
+          <li class="card">
             <img
               src="./images/tunnel.png"
               alt="Tunnel image"
@@ -124,8 +120,8 @@
                 class="like-icon"
               />
             </div>
-          </figure>
-          <figure class="card">
+          </li>
+          <li class="card">
             <img
               src="./images/mountain-house.png"
               alt="Mountain house image"
@@ -139,8 +135,8 @@
                 class="like-icon"
               />
             </div>
-          </figure>
-        </section>
+          </li>
+        </ul>
       </main>
       <footer class="footer">
         <p class="footer__text">2024 &copy; Spots</p>
