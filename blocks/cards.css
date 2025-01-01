@@ -7,72 +7,11 @@
   justify-content: center;
 }
 
-.card {
-  max-width: 413px;
-  margin: 0;
-  list-style-type: none;
-}
-
-.card__image {
-  width: 413px;
-  height: 413px;
-  object-fit: cover;
-  border-radius: 8px;
-  border: none;
-  display: block;
-}
-
-.card__subtitle {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 12px 0 0;
-}
-
-.card__subtitle_text {
-  margin: 0;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.like-icon {
-  max-width: 23px;
-  max-height: 20px;
-  color: #212121;
-  opacity: 0.4;
-}
-
-.like-icon:hover {
-  opacity: 1;
-}
-
 @media screen and (max-width: 627px) {
   .cards {
     grid-template-columns: repeat(auto-fit, 288px);
     margin: 0 auto;
     gap: 20px;
     padding-bottom: 20px;
-  }
-
-  .card {
-    max-width: 288px;
-    margin: 0 auto;
-  }
-  .card__image {
-    width: 288px;
-    height: 288px;
-  }
-  .card__subtitle_text {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  .like-icon {
-    max-width: 20px;
-    max-height: 18px;
   }
 }
