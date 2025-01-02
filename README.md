@@ -17,3 +17,7 @@ This project is our first project utilizing responsive layouts and the _display:
 This webpage is deployed to GitHub Pages:
 
 https://jessmsang.github.io/se_project_spots/
+
+## Project Video
+
+https://drive.google.com/file/d/1OhAjN5mnZVyuTWB18OoOaNbBhWIA8WcH/view?usp=sharing
