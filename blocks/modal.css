@@ -50,6 +50,7 @@
 
 .modal__close-button:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .modal__form {
