@@ -48,6 +48,10 @@
   background-color: transparent;
 }
 
+.modal__close-button:hover {
+  opacity: 1;
+}
+
 .modal__form {
   display: flex;
   flex-direction: column;
@@ -59,20 +63,25 @@
   display: flex;
   flex-direction: column;
   font-size: 16px;
-  font-weight: 500px;
-  line-height: 1;
+  font-weight: 500;
+  line-height: 1.1;
   gap: 8px;
   padding-bottom: 32px;
 }
 
 .modal__input {
   max-width: 630px;
-  height: 52px;
   border-radius: 8px;
   border: 1px solid rgba(33, 33, 33, 0.4);
   font-size: 20px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 1;
+  padding: 16px 12px;
+}
+
+.modal__input:hover {
+  border: 1px solid rgba(33, 33, 33, 1);
+  cursor: pointer;
 }
 
 .modal__submit-button {
