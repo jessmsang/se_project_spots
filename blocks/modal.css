@@ -95,3 +95,17 @@
   font-weight: 500px;
   line-height: 1;
 }
+
+@media screen and (max-width: 627px) {
+  .modal {
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+  }
+
+  .modal__container {
+  }
+
+  .modal__form {
+  }
+}
