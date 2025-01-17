@@ -10,6 +10,8 @@
   justify-content: center;
   align-items: center;
   visibility: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .modal_opened {
@@ -100,12 +102,40 @@
   .modal {
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
+    padding: 10px;
   }
 
   .modal__container {
+    max-width: 300px;
+    max-height: 336px;
+    padding: 12px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+    line-height: 1;
+    padding-bottom: 24px;
+    padding-top: 10px;
+  }
+
+  .modal__close-button {
+    top: 12px;
+    right: 12px;
   }
 
   .modal__form {
+    max-width: 276px;
+  }
+
+  .modal__label {
+    padding-bottom: 24px;
+  }
+
+  .modal__input {
+    font-size: 16px;
+    line-height: 1;
+  }
+  .modal__submit-button {
+    max-width: 276px;
   }
 }
