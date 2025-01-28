@@ -1,6 +1,7 @@
 .card {
   margin: 0;
   list-style-type: none;
+  position: relative;
 }
 
 .card__image {
@@ -10,6 +11,23 @@
   border-radius: 8px;
   border: none;
   display: block;
+}
+
+.card__delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent url(../images/delete-button_icon.svg) center no-repeat;
+  width: 32px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.card__delete-button:hover {
+  background: transparent url(../images/delete-button_icon_hover.svg) center
+    no-repeat;
 }
 
 .card__footer {
@@ -35,7 +53,6 @@
   width: 23px;
   height: 20px;
   border: none;
-  background-color: transparent;
   opacity: 0.4;
   cursor: pointer;
   padding: 0;
