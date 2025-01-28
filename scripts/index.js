@@ -59,7 +59,7 @@ function handleSaveModal(evt) {
   evt.preventDefault();
   profileName.textContent = inputName.value;
   profileDescription.textContent = inputDescription.value;
-  closeModal();
+  closeModal(editProfileModal);
 }
 
 function getCardElement(data) {
