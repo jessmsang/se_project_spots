@@ -4,20 +4,26 @@ An Image Social Media Site
 
 ## Description
 
-This project is our first project utilizing responsive layouts and the _display:grid_ property, as well as several other functionalities learned in sprint 3 and previous sprints.
+This project is a social media site that includes functionality provided by JavaScript, CSS, and HTML.
+
+This functionality includes:
+
+- An edit profile modal, which utilizes a form that gives the user the option of updating their Name and Description.
+- An "new post" modal, which allows the user to create a new card by opening a form to insert an image link and caption.
+- A like icon, which can be clicked and unclicked(toggled) to alter the color of the icon.
+- A delete post button, which allows users to delete any card they want.
+- A preview modal, which opens the card image in its full, un-cropped state.
+- Various hover states. These include the: edit profile button, close button, like button, new post button, and delete post button.
 
 ## Tech Stack
 
 - HTML
 - CSS
 - Responsive Design
+- JavaScript
 
 ## Deployment
 
 This webpage is deployed to GitHub Pages:
 
 https://jessmsang.github.io/se_project_spots/
-
-## Project Video
-
-https://drive.google.com/file/d/1OhAjN5mnZVyuTWB18OoOaNbBhWIA8WcH/view?usp=sharing
