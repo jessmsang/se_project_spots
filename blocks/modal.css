@@ -14,9 +14,6 @@
   padding-right: 20px;
 }
 
-.modal_type_preview {
-}
-
 .modal_opened {
   visibility: visible;
 }
