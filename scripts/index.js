@@ -1,5 +1,9 @@
 const initialCards = [
   {
+    name: "Golden Gate bridge",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
+  },
+  {
     name: "Val Thorens",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg",
   },
@@ -22,6 +26,14 @@ const initialCards = [
   {
     name: "Mountain house",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg",
+  },
+  {
+    name: "Roebling bridge",
+    link: "https://images.unsplash.com/photo-1600186203774-769f73209d00?q=80&w=2613&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Hong Kong skyline",
+    link: "https://plus.unsplash.com/premium_photo-1661887277173-f996f36b8fb2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
@@ -79,6 +91,10 @@ function getCardElement(data) {
   const cardImageElement = cardElement.querySelector(".card__image");
   const cardLikeButton = cardElement.querySelector(".card__like-button");
   const cardDeleteButton = cardElement.querySelector(".card__delete-button");
+  const previewModal = document.querySelector("#preview-modal");
+  const previewModalCloseButton = previewModal.querySelector(
+    ".modal__close-button"
+  );
 
   cardNameElement.textContent = data.name;
   cardImageElement.src = data.link;
@@ -90,6 +106,20 @@ function getCardElement(data) {
 
   cardDeleteButton.addEventListener("click", () => {
     cardElement.remove();
+  });
+
+  cardImageElement.addEventListener("click", () => {
+    const previewModalImage = previewModal.querySelector(".modal__image");
+    const previewModalCaption = previewModal.querySelector(".modal__caption");
+    previewModalImage.src = data.link;
+    previewModalImage.alt = data.name;
+    previewModalCaption.textContent = data.name;
+
+    openModal(previewModal);
+  });
+
+  previewModalCloseButton.addEventListener("click", () => {
+    closeModal(previewModal);
   });
 
   return cardElement;
@@ -109,7 +139,7 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 initialCards.forEach((card) => {
   const cardElement = getCardElement(card);
-  cardsList.prepend(cardElement);
+  cardsList.append(cardElement);
 });
 
 addCardButton.addEventListener("click", () => {
