@@ -121,5 +121,3 @@ closeAddCardModal.addEventListener("click", () => {
 });
 
 addCardForm.addEventListener("submit", handleAddCardSubmit);
-
-//.addEventListener("submit", handleSaveModal);
