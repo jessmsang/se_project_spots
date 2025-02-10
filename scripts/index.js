@@ -84,14 +84,6 @@ function closeModal(modal) {
   modal.classList.remove("modal_opened");
 }
 
-function closeModalClick(modal) {
-  modals.forEach((modal) => {
-    if (modal.classList.contains("modal_opened")) {
-      modal.addEventListener("click", closeModal(modal));
-    }
-  });
-}
-
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = inputName.value;
@@ -167,5 +159,18 @@ closeButtons.forEach((button) => {
   const modal = button.closest(".modal");
   button.addEventListener("click", () => {
     closeModal(modal);
+  });
+});
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", function (evt) {
+    if (evt.target.classList.contains("modal" && "modal_opened")) {
+      closeModal(modal);
+    }
+  });
+  document.addEventListener("keyup", function (evt) {
+    if (evt.key === "Escape") {
+      closeModal(modal);
+    }
   });
 });
