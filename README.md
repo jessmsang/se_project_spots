@@ -14,6 +14,8 @@ This functionality includes:
 - A delete post button, which allows users to delete any card they want.
 - A preview modal, which opens the card image in its full, un-cropped state.
 - Various hover states. These include the: edit profile button, close button, like button, new post button, and delete post button.
+- Form validation has been added to maintain certain character minimums/maximums, add "required" to each field, style the error messages and form, and specify "type" to each field to help with correct validation requirements.
+- Close modals - modals can be closed using the "esc" key, as well as by clicking the modal overlay/background.
 
 ## Tech Stack
 
