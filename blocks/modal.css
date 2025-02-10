@@ -134,6 +134,14 @@
   cursor: pointer;
 }
 
+.modal__error {
+  color: rgba(255, 0, 0, 0.7);
+}
+
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
 .modal__submit-button {
   background-color: rgba(33, 33, 33, 1);
   color: rgba(252, 245, 229, 1);
@@ -144,6 +152,10 @@
   font-weight: 500;
   line-height: 1;
   cursor: pointer;
+}
+
+.modal__submit-button_type_disabled {
+  background-color: rgba(33, 33, 33, 0.5);
 }
 
 @media screen and (max-width: 627px) {
@@ -160,7 +172,6 @@
 
   .modal__container {
     max-width: 300px;
-    max-height: 336px;
     padding: 12px;
   }
 
