@@ -78,10 +78,12 @@ const modals = document.querySelectorAll(".modal");
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  document.addEventListener("keyup", closeModalEsc);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  document.removeEventListener("keyup", closeModalEsc);
 }
 
 function handleEditProfileSubmit(evt) {
@@ -180,7 +182,4 @@ modals.forEach((modal) => {
       closeModal(modal);
     }
   });
-
-  document.addEventListener("keyup", closeModalEsc, true);
-  document.removeEventListener("keyup", closeModalEsc, false);
 });
