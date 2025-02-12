@@ -134,6 +134,14 @@ function getCardElement(data) {
   return cardElement;
 }
 
+function closeModalEsc(evt) {
+  modals.forEach((modal) => {
+    if (modal.classList.contains("modal_opened") && evt.key === "Escape") {
+      closeModal(modal);
+    }
+  });
+}
+
 //Event Listeners:
 
 profileEditButton.addEventListener("click", () => {
@@ -173,9 +181,6 @@ modals.forEach((modal) => {
     }
   });
 
-  document.addEventListener("keyup", function (evt) {
-    if (modal.classList.contains("modal_opened") && evt.key === "Escape") {
-      closeModal(modal);
-    }
-  });
+  document.addEventListener("keyup", closeModalEsc, true);
+  document.removeEventListener("keyup", closeModalEsc, false);
 });
