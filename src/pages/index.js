@@ -48,30 +48,6 @@ import { setButtonText } from "../utils/helpers.js";
 //   },
 // ];
 
-const api = new Api({
-  baseUrl: "https://around-api.en.tripleten-services.com/v1",
-  headers: {
-    authorization: "83f8346c-1fe1-46f3-bd76-219df8d8d06b",
-    "Content-Type": "application/json",
-  },
-});
-
-api
-  .getAppInfo()
-  .then(([cards, userInfo]) => {
-    profileName.textContent = userInfo.name;
-    profileDescription.textContent = userInfo.about;
-    profileAvatarImage.src = userInfo.avatar;
-
-    cards.forEach((card) => {
-      const cardElement = getCardElement(card);
-      cardsList.append(cardElement);
-    });
-  })
-  .catch((err) => {
-    console.error(err);
-  });
-
 //Card elements
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards");
@@ -136,6 +112,32 @@ const closeButtons = document.querySelectorAll(".modal__close-button");
 //Modal elements (universal)
 const modals = document.querySelectorAll(".modal");
 
+//API code:
+const api = new Api({
+  baseUrl: "https://around-api.en.tripleten-services.com/v1",
+  headers: {
+    authorization: "83f8346c-1fe1-46f3-bd76-219df8d8d06b",
+    "Content-Type": "application/json",
+  },
+});
+
+api
+  .getAppInfo()
+  .then(([cards, userInfo]) => {
+    console.log("API Response:", cards, userInfo);
+    profileName.textContent = userInfo.name;
+    profileDescription.textContent = userInfo.about;
+    profileAvatarImage.src = userInfo.avatar;
+
+    cards.forEach((card) => {
+      const cardElement = getCardElement(card);
+      cardsList.append(cardElement);
+    });
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
 //Functions:
 
 function openModal(modal) {
@@ -175,10 +177,6 @@ function handleAddCardSubmit(evt) {
   api
     .addNewCard({ name: inputCaption.value, link: inputImageLink.value })
     .then((cardData) => {
-      const inputValues = {
-        name: inputCaption.value,
-        link: inputImageLink.value,
-      };
       const cardElement = getCardElement(cardData);
       cardsList.prepend(cardElement);
       addCardForm.reset();
