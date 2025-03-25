@@ -154,8 +154,74 @@
   cursor: pointer;
 }
 
+.modal__submit-button_saving {
+  content: "Saving...";
+}
+
+.modal__submit-button_hidden {
+  display: none;
+}
+
 .modal__submit-button_type_disabled {
   background-color: rgba(33, 33, 33, 0.5);
+}
+
+.modal__close-button_type_delete {
+  background: transparent url(../images/close_icon_light.svg) center no-repeat;
+  top: 0;
+  right: -50px;
+  opacity: 1;
+  position: absolute;
+}
+
+.modal__close-button_type_delete:hover {
+  opacity: 0.4;
+}
+
+.modal__title_type_delete {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 32px;
+}
+
+.modal__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modal__submit-button_type_delete {
+  width: 156px;
+  height: 52px;
+  border-radius: 8px;
+  padding: 18px 32px;
+  border: none;
+  background: rgba(255, 101, 101, 1);
+  color: rgba(33, 33, 33, 1);
+}
+
+.modal__submit-button_type_delete:hover {
+  cursor: pointer;
+  background: rgba(255, 51, 51, 1);
+}
+
+.modal__submit-button_type_delete-loading {
+  content: "Deleting...";
+}
+
+.modal__cancel-button {
+  width: 156px;
+  height: 52px;
+  border-radius: 8px;
+  padding: 18px 32px;
+  border: 1px solid rgba(33, 33, 33, 1);
+}
+
+.modal__cancel-button:hover {
+  cursor: pointer;
+  background: rgba(33, 33, 33, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 @media screen and (max-width: 627px) {
@@ -170,14 +236,29 @@
     padding: 16px;
   }
 
+  .modal_type_delete {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0;
+  }
+
+  /* .modal_type_avatar {
+  } */
+
   .modal__container {
     max-width: 300px;
     padding: 12px;
   }
 
   .modal__container_type_preview {
-    max-width: 288px;
+    width: 100%;
     padding: 0;
+  }
+
+  .modal__container_type_delete {
+    max-width: 300px;
+    max-height: 208px;
+    padding: 12px;
+    align-items: center;
   }
 
   .modal__image {
@@ -188,7 +269,12 @@
     font-size: 20px;
     line-height: 1;
     padding-bottom: 24px;
-    padding-top: 10px;
+  }
+
+  .modal__title_type_delete {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
   }
 
   .modal__caption {
@@ -202,6 +288,11 @@
   }
 
   .modal__close-button_type_preview {
+    top: -45px;
+    right: 0px;
+  }
+
+  .modal__close-button_type_delete {
     top: -45px;
     right: 0px;
   }
@@ -220,5 +311,11 @@
   }
   .modal__submit-button {
     max-width: 276px;
+  }
+
+  .modal__buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
 }
