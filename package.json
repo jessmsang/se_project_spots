@@ -1,6 +1,6 @@
 {
   "name": "se_project_spots",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "An Image Social Media Site",
   "main": "index.js",
   "scripts": {
