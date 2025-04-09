@@ -82,7 +82,6 @@
   object-fit: cover;
   border: none;
   padding: 0;
-  background-color: transparent;
 }
 
 .modal__close-button:hover {
